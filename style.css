@@ -1,0 +1,187 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #1b1b2f;
+    color: #eaeaea;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #7c3aed, #2563eb);
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.header-logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #fff;
+}
+
+header .logo {
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header .tagline {
+    margin-top: 8px;
+    font-size: 1rem;
+    color: #dbeafe;
+}
+
+/* Navigasi */
+nav {
+    background-color: #12121f;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #7c3aed;
+}
+
+/* Layout utama: konten + sidebar */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+    gap: 30px;
+}
+
+/* Konten utama */
+main {
+    flex: 3;
+    min-width: 280px;
+}
+
+main h1 {
+    color: #a78bfa;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.card {
+    background: #24243e;
+    border-left: 5px solid #2563eb;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.card h2 {
+    color: #f472b6;
+    margin-bottom: 10px;
+}
+
+/* Sidebar */
+aside {
+    flex: 1;
+    min-width: 220px;
+    background: #24243e;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    height: fit-content;
+}
+
+aside h3 {
+    color: #a78bfa;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 5px;
+}
+
+aside h3:first-child {
+    margin-top: 0;
+}
+
+.info-list {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.info-list li {
+    padding: 6px 0;
+}
+
+.skin-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.skin-item {
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.skin-item img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 5px;
+}
+
+.tips {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+}
+
+/* Footer */
+footer {
+    background-color: #12121f;
+    color: #a78bfa;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
